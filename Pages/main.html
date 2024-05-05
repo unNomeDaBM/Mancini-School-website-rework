@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- Google font "Search Lens" icon -->
 
 
-    <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/script.js" defer></script>
     
     <link rel="icon" href="/Images/cropped-LogoMancini-gifSFERA.gif"> <!-- Image Icon next to the Title -->
     <title>###Benvenuti al liceo scientifico statale - Pasquale Stanislao Mancini</title>
@@ -30,7 +30,7 @@
         </div>
         <div class="header-main">
             <div class="header-main-background-saver">
-                <div class="menu-button-container">
+                <div class="menu-button-container" id="menu-button">
                     <div class="menu-bars"></div>
                     <div class="menu-bars"></div>
                     <div class="menu-bars"></div>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </header>
-    <div class="header-sticky-sections-container"> <!-- This has to be stcky -->
+    <div class="header-sticky-sections-container" id="sticky-menu" state="closed"> <!-- This is stcky -->
         <div class="header-sticky-section-link-container">
             <a href="" class="header-sticky-section-link font-color-light">
                 <div class="">Home</div>
