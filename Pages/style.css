@@ -62,7 +62,6 @@
 
 
 body{
-    background-color: var(--background-main-color);
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     
@@ -113,12 +112,19 @@ header{
             align-items: center;
 
             margin-bottom: 4px;
+            
+            .menu-button-container{
+
+                display: none;
+            }
 
             .header-main-title-container{
                 display: flex;
+                align-items: center;
                 gap: 12px;
     
                 padding: 16px 0;
+
                 
                 .main-text{
 
@@ -242,6 +248,11 @@ header{
     margin: 0 10vw;
 }
 
+main{
+
+    background-color: var(--background-main-color);
+}
+
 footer{
     background-color: var(--background-footer-color);
 
@@ -321,7 +332,14 @@ footer{
 
 @media only screen and (max-width: 680px) {
 
+    body{
+        background-color: var(--background-main-header-color);
+    }
+
     header{
+        position: sticky;
+        top: 0px;
+        z-index: 10;
 
         .background-header-top{
 
@@ -331,8 +349,23 @@ footer{
         .header-main{
 
             .header-main-background-saver{
+                flex-wrap: nowrap;
+                gap: 16px;
+                
+                .menu-button-container{
+                    display: flex;
+                    flex-flow: column;
+                    gap: 5px;
+
+                    .menu-bars{
+                        width: 28px;
+                        height: 4px;
+                        background-color: var(--font-color-light);
+                    }
+                }
 
                 .header-main-title-container{
+
 
                     img{
                         width: 60px;
@@ -356,6 +389,11 @@ footer{
                 }
             }
         }
+
+    }
+
+    .header-sticky-sections-container{
+        display: none;
     }
 
     .header-main-background-saver , .header-top{
