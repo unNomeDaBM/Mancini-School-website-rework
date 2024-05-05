@@ -321,6 +321,46 @@ footer{
 
 @media only screen and (max-width: 680px) {
 
+    header{
+
+        .background-header-top{
+
+            display: none;
+        }
+
+        .header-main{
+
+            .header-main-background-saver{
+
+                .header-main-title-container{
+
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .main-text{
+
+                        .title{
+                            font-size: 1.1rem;
+                        }
+
+                        .sub-title{
+                            display: none;
+                        }
+                    }
+                }
+
+                .search-bar-container{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header-main-background-saver , .header-top{
+        margin: 0 5vw;
+    }
 
 
     footer{
