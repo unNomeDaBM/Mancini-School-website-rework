@@ -65,6 +65,8 @@ body{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     
+    background-color: var(--background-main-header-color);
+
     /* height: 200vh; */
 }
 h1{
@@ -195,7 +197,6 @@ header{
     justify-content: space-evenly;
     align-items: start;
 
-    margin-bottom: 32px;
     padding: 2px 8px;
 
     
@@ -262,7 +263,6 @@ footer{
         align-items: center;
         gap: 12px;
 
-        margin-top: 28px;
         padding: 32px 24px 40px 24px;
 
         &::after{
@@ -332,9 +332,9 @@ footer{
 
 @media only screen and (max-width: 680px) {
 
-    body{
-        background-color: var(--background-main-header-color);
-    }
+    /* body{
+
+    } */
 
     header{
         position: sticky;
@@ -361,6 +361,16 @@ footer{
                         width: 28px;
                         height: 4px;
                         background-color: var(--font-color-light);
+
+                        &:nth-child(1){
+                            transition-duration: 0.6s;
+                        } 
+                        &:nth-child(2){
+                            transition-duration: 0.3s;
+                        }
+                        &:nth-child(3){
+                            transition-duration: 0.6s;
+                        }
                     }
                 }
 
@@ -434,9 +444,9 @@ footer{
         margin: 0 5vw;
     }
 
-    main{
+    /* main{
         padding-bottom: 28px;
-    }
+    } */
 
     footer{
         .footer-title-container{

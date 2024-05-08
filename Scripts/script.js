@@ -1,4 +1,8 @@
+let root = document.getRootNode();
+console.log(root);
+
 let menuButton = document.getElementById("menu-button");
+let menuButtonBars = menuButton.children;
 let menu = document.getElementById("sticky-menu");
 
 menuButton.addEventListener("click" , e => {
@@ -23,6 +27,12 @@ function openMenu(){
 
     menu.style.transitionTimingFunction = "ease";
     menu.style.translate = "110svw";
+
+    menuButtonBars[0].style.rotate = "45deg";
+    menuButtonBars[0].style.translate = "0 8.5px";
+    menuButtonBars[1].style.visibility = "hidden"; // Todo : get the root variable for the background color
+    menuButtonBars[2].style.rotate = "-45deg";
+    menuButtonBars[2].style.translate = "0 -8.5px";
 }
 
 function closeMenu(){
@@ -30,4 +40,10 @@ function closeMenu(){
     
     menu.style.transitionTimingFunction = "ease-in";
     menu.style.translate = "-110svw";
+    
+    menuButtonBars[0].style.rotate = "0deg";
+    menuButtonBars[0].style.translate = "0 0px";
+    menuButtonBars[1].style.visibility = "visible"; // Todo : get the root variable for the background color
+    menuButtonBars[2].style.rotate = "0deg";
+    menuButtonBars[2].style.translate = "0 0";
 }
