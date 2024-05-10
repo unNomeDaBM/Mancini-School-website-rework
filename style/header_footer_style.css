@@ -70,7 +70,7 @@ body{
     /* height: 200vh; */
 }
 h1{
-    font-weight: 600;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -132,6 +132,7 @@ header{
 
                     .title{
                         font-size: 1.7rem;
+
                     }
                 }
             }
@@ -148,6 +149,10 @@ header{
                     font-size: 1.05rem;
 
                     background-color: var(--background-main-header-search-bar);
+
+                    &::placeholder{
+                        color: var(--font-hover-link-color-light);
+                    }
                 }
                 
                 &::after{
@@ -351,6 +356,9 @@ footer{
             .header-main-background-saver{
                 flex-wrap: nowrap;
                 gap: 16px;
+
+                margin-bottom: 0;
+                height: 12svh;
                 
                 .menu-button-container{
                     display: flex;
@@ -362,10 +370,7 @@ footer{
                         height: 4px;
                         background-color: var(--font-color-light);
 
-                        &:nth-child(1){
-                            transition-duration: 0.6s;
-                        } 
-                        &:nth-child(3){
+                        &:nth-child(1), &:nth-child(3){
                             transition-duration: 0.6s;
                         }
                     }
@@ -402,8 +407,8 @@ footer{
     .header-sticky-sections-container{
 
         position: fixed;
-        height: calc(100svh - 100px);
-        top: 100px;
+        height: 88.5svh;
+        top: 11.5svh;
         left: 0;
         transform: translateX(-110vw);
         width: 100vw;

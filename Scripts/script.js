@@ -33,19 +33,13 @@ function closeMenu(){
 
 
 
-menuButton.addEventListener("click" , e => {
+menuButton.addEventListener("click" , (e) => {
     let menuState = menu.getAttribute("state");
-    console.log(menuState)
 
     if (menuState === "open"){
         closeMenu();
-        // menu.style.display = "none";
-        // menu.setAttribute("state", "closed")
         
     }else if(menuState === "closed"){
         openMenu();
-        // menu.style.display = "flex";
-        // menu.setAttribute("state", "open")
     }
 })
-
