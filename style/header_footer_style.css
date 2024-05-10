@@ -21,6 +21,24 @@
 }
 
 
+@keyframes header-sticky-arrow-animation {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+    
+    85%{
+        transform: translateY(-3px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
 /*Google fonts "Expand More" icon' settings (in the header)*/
 .header-sticky-section-link > .material-symbols-outlined {
     font-variation-settings:
@@ -131,8 +149,7 @@ header{
                 .main-text{
 
                     .title{
-                        font-size: 1.7rem;
-
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -216,6 +233,13 @@ header{
         &:hover > .header-sticky-section-link,
         &:focus-visible >.header-sticky-section-link{
             background-color: var(--background-main-header-link-hover-color);
+
+            span{
+                animation-name: header-sticky-arrow-animation;
+                animation-duration: 0.5s;
+                animation-timing-function: ease;
+                animation-iteration-count: 1;
+            }
         }
         
         &:hover > .drop-down-menu,
@@ -250,7 +274,7 @@ header{
     }
 }
 
-.header-main-background-saver , .header-top{
+.header-main-background-saver , .header-top, .content{
     margin: 0 10vw;
 }
 
@@ -439,6 +463,11 @@ footer{
                     display: none;
                 }
             }
+
+            &:hover>.drop-down-menu, 
+            &:focus-visible>.drop-down-menu{
+                display: none;
+            }
         }
     }
 
@@ -479,3 +508,4 @@ footer{
         }
     }
 }
+
