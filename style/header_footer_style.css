@@ -5,13 +5,20 @@
     outline: solid 0px blue;
 }
 :root{
-    --background-main-color: #ffffff;
     --background-top-header-color: #125f48;
     --background-main-header-color: #146d54;
     --background-main-header-link-hover-color: #10614a;
     --background-main-header-search-bar: var(--background-main-header-color);
     --background-active-main-header-search-bar-button: #278f8d;
     --background-drop-down-menu-color: #ffffff;
+    
+    
+    --background-main-color: #ffffff;
+    --bakcground-bacheca-color: #cfe4db;
+    --background-arrow-button-color: #ddf1e8;
+    --background-bacheca-item-color: #ddf1e8;
+
+
     --background-footer-color: #093e32;
     --background-footer-bottom-color: #042820 ;
     --font-hover-link-color-dark: #136e54;
@@ -47,6 +54,7 @@
     'GRAD' 0,
     'opsz' 24;
 
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -95,6 +103,7 @@ a{
     color: inherit;
 }
 img{
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -277,13 +286,98 @@ header{
     }
 }
 
-.header-main-background-saver , .header-top, .content{
+.header-main-background-saver , .header-top{
     margin: 0 10vw;
 }
 
 main{
 
     background-color: var(--background-main-color);
+
+    .content{
+
+        padding: 50px 0;
+
+        .bacheca{
+            background-color: var(--bakcground-bacheca-color);
+            padding-top: 20px;
+            margin: 0 50px;
+            border-radius: 30px;
+
+            overflow: hidden;
+        
+            .top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 20px 40px;
+
+                .title{
+                    font-size: 3rem;
+                    font-weight: 500;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+                .arrows{
+                    display: flex;
+                    justify-content: center;
+                    gap: 3px;
+
+                    button{
+                        background-color: var(--background-arrow-button-color);
+                        padding: 10px 10px 6.5px 10px;
+                        
+                        &:nth-child(1){
+                            border-radius: 30px 0 0 30px;
+                        }
+                        &:nth-child(2){
+                            transform: rotate(180deg);
+                            border-radius: 30px 0 0 30px;
+                        }
+                    }
+                }
+            }
+
+            nav{
+                position: relative;
+                /* left: -250px; */
+
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: repeat(5, 280px);
+
+                padding: 0 0 80px 40px;
+                gap: 40px;
+
+
+                .bacheca-item{
+                    /* user-select: none; */
+                    background-color: var(--background-bacheca-item-color);
+                    height: 320px;
+
+                    border-radius: 24px;
+                    padding: 16px 16px 16px 16px;
+
+                    .date{
+                        text-align: right;
+                        font-size: 0.8rem;
+                    }
+                    .inner-title{
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: 500;
+                        font-size: 1.7rem;
+                        padding: 10px 0;
+                    }
+                    p{ 
+                        height: 73%;
+                        overflow-y: hidden;
+                        text-overflow: ellipsis;    
+                    }
+                }
+            }
+        }
+    }
 }
 
 footer{
