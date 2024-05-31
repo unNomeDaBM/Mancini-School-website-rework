@@ -1,6 +1,6 @@
-let menuButton = document.getElementById("menu-button");
-let menuButtonBars = menuButton.children;
-let menu = document.getElementById("sticky-menu");
+const menuButton = document.getElementById("menu-button");
+const menuButtonBars = menuButton.children;
+const menu = document.getElementById("sticky-menu");
 
 
 function openMenu(){

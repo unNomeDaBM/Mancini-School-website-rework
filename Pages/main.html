@@ -16,8 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Google font "Montserrat" font -->
 
 
-    <script src="../Scripts/script.js" defer></script>
-    
+    <script src="../Scripts/media_screen_nav_animation_button.js" defer></script>
+    <script src="../Scripts/bacheca_slide.js" defer></script>
+
     <link rel="icon" href="/Images/cropped-LogoMancini-gifSFERA.gif"> <!-- Image Icon next to the Title -->
     <title>###Benvenuti al liceo scientifico statale - Pasquale Stanislao Mancini</title>
 </head>
@@ -141,36 +142,47 @@
                         Bacheca
                     </div>
                     <div class="arrows">
-                        <button type="button" title="Naviga Bacheca a destra" id="right arrow"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000"><path d="M359.33-241.33 120-480.67 359.33-720l47.34 47.33L248-514h592v66.67H248l158.67 158.66-47.34 47.34Z"/></svg></button>
-                        <button type="button" title="Naviga Bacheca a sinistra" id="left arrow"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000"><path d="M359.33-241.33 120-480.67 359.33-720l47.34 47.33L248-514h592v66.67H248l158.67 158.66-47.34 47.34Z"/></svg></button>
+                        <button type="button" title="Naviga Bacheca a destra" id="bacheca left arrow"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000"><path d="M359.33-241.33 120-480.67 359.33-720l47.34 47.33L248-514h592v66.67H248l158.67 158.66-47.34 47.34Z"/></svg></button>
+                        <button type="button" title="Naviga Bacheca a sinistra" id="bacheca right arrow"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000"><path d="M359.33-241.33 120-480.67 359.33-720l47.34 47.33L248-514h592v66.67H248l158.67 158.66-47.34 47.34Z"/></svg></button>
                     </div>
                 </div>
-                <nav>
+                <nav id="sliding nav">
                     <!-- Every list items qill be added with js from a database converted from JSON the next ones are just examplse -->
                     <div class="bacheca-item">
                         <div class="date">13 Maggio 2024</div>
                         <div class="inner-title">Circolare n. 199</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora sapiente totam mollitia temporibus magni asperiores, possimus consequatur suscipit nobis quos quia impedit adipisci voluptatem nemo repudiandae nam error repellendus.loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum cupiditate et reiciendis asperiores, ipsam dolores suscipit, minus, earum dicta aliquam! Atque corrupti autem consectetur quia ab eaque. Aut, accusantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora sapiente totam mollitia temporibus magni asperiores, possimus consequatur suscipit nobis quos quia impedit adipisci voluptatem nemo repudiandae nam error repellendus.loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil . . . </p>
                     </div>
                     <div class="bacheca-item">
                         <div class="date">13 Maggio 2024</div>
                         <div class="inner-title">Circolare n. 199</div>
-                        <p>loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum cupiditate et reiciendis asperiores, ipsam dolores suscipit, minus, earum dicta aliquam! Atque corrupti autem consectetur quia ab eaque. Aut, accusantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora sapiente totam mollitia temporibus magni asperiores, possimus consequatur suscipit nobis quos quia impedit adipisci voluptatem nemo repudiandae nam error repellendus.loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil . . . </p>
                     </div>
                     <div class="bacheca-item">
                         <div class="date">13 Maggio 2024</div>
                         <div class="inner-title">Circolare n. 199</div>
-                        <p>loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum cupiditate et reiciendis asperiores, ipsam dolores suscipit, minus, earum dicta aliquam! Atque corrupti autem consectetur quia ab eaque. Aut, accusantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora sapiente totam mollitia temporibus magni asperiores, possimus consequatur suscipit nobis quos quia impedit adipisci voluptatem nemo repudiandae nam error repellendus.loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil . . . </p>
                     </div>
                     <div class="bacheca-item">
                         <div class="date">13 Maggio 2024</div>
                         <div class="inner-title">Circolare n. 199</div>
-                        <p>loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum cupiditate et reiciendis asperiores, ipsam dolores suscipit, minus, earum dicta aliquam! Atque corrupti autem consectetur quia ab eaque. Aut, accusantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora sapiente totam mollitia temporibus magni asperiores, possimus consequatur suscipit nobis quos quia impedit adipisci voluptatem nemo repudiandae nam error repellendus.loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil . . . </p>
                     </div>
                     <div class="bacheca-item">
                         <div class="date">13 Maggio 2024</div>
                         <div class="inner-title">Circolare n. 199</div>
-                        <p>loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum cupiditate et reiciendis asperiores, ipsam dolores suscipit, minus, earum dicta aliquam! Atque corrupti autem consectetur quia ab eaque. Aut, accusantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora sapiente totam mollitia temporibus magni asperiores, possimus consequatur suscipit nobis quos quia impedit adipisci voluptatem nemo repudiandae nam error repellendus.loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil . . . </p>
+                    </div>
+                    <div class="bacheca-item">
+                        <div class="date">13 Maggio 2024</div>
+                        <div class="inner-title">Circolare n. 199</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempora sapiente totam mollitia temporibus magni asperiores, possimus consequatur suscipit nobis quos quia impedit adipisci voluptatem nemo repudiandae nam error repellendus.loreLorem ipsum dolor sit amet consectetur adipisicing elit. Nihil . . . </p>
+                    </div>
+
+                    <div class="see-more-item">
+                        <div class="inner-title">
+                            <a href="">Altro...</a>
+                        </div>
                     </div>
                 </nav>
             </div>
