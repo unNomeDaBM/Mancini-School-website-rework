@@ -16,7 +16,6 @@ bacheca_left_arrow.addEventListener("click", ()=>{
         bacheca_translate_x += (bacheca_items_width  + bacheca_items_gap);
         bacheca_focus_element -= 1;
     }
-    console.log(bacheca_focus_element)
 });
 bacheca_right_arrow.addEventListener("click", ()=>{
     
