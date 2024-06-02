@@ -1,0 +1,36 @@
+@media only screen and (max-width: 700px) {
+
+    main{
+
+        .content{
+            padding: 0;
+
+            .bacheca{
+
+                margin: 0;
+                border-radius: 0;
+                padding: 20px 0;
+
+                .top{
+
+                    .title{
+                        margin-bottom: 20px;
+                    }
+
+                    .arrows{
+                        display: none;
+                    }
+                }
+
+                nav{
+
+                    overflow: scroll;
+
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

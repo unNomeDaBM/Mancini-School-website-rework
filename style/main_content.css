@@ -73,7 +73,7 @@ main{
                 grid-template-columns: repeat(7, 280px);
                 grid-template-rows: 340px;
 
-                padding: 0 0 40px 40px;
+                padding: 0 40px 40px 40px;
                 gap: 40px;
 
                 transition: .4s;
