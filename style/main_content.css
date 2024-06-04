@@ -147,5 +147,38 @@ main{
                 }
             }
         }
+
+        .eventi{
+            background-color: var(--background-main-header-color);
+            /* gradient to do */
+            padding: 30px 20svw;
+
+            .title{
+                font-size: 5rem;
+                font-weight: 400;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .evento{
+                display: grid;
+                grid-template-columns: 50% 50%;
+
+                img{
+                    grid-row: 2/4;
+
+                    width: 90%;
+                    height: 90%;
+                    margin: auto;
+                    border-radius: 16px;
+                }
+
+                .page-link{
+                    grid-column: 2/3;
+                    align-self: center;
+
+                    text-align: end;
+                }
+            }
+        }
     }
 }

@@ -5,6 +5,10 @@
     outline: solid 0px blue;
 }
 :root{
+    --font-color-light: #ffffff;
+    --font-color-dark: #181818;
+    
+    
     --background-top-header-color: #125f48;
     --background-main-header-color: #146d54;
     --background-main-header-link-hover-color: #10614a;
@@ -24,8 +28,7 @@
     --background-footer-bottom-color: #042820 ;
     --font-hover-link-color-dark: #136e54;
     --font-hover-link-color-light: #8adcc5;
-    --font-color-light: #ffffff;
-    --font-color-dark: #181818;
+    
 }
 
 
